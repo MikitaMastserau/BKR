@@ -1,0 +1,52 @@
+.header {
+   padding: 20px 0;
+
+   .container {
+      max-width: 1200px;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 15px;
+      margin: 0 auto;
+   }
+
+   &__links {
+      display: flex;
+      align-items: center;
+      gap: 70px;
+
+      nav {
+         display: flex;
+
+         a {
+            width: 97px;
+            display: block;
+            font-size: 16px;
+            line-height: 32px;
+            text-align: center;
+            color: #000;
+         }
+      }
+   }
+
+   &__btn {
+      width: 138px;
+      font-size: 16px;
+      font-family: "Oswald", sans-serif;
+      line-height: normal;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FFF;
+      background: #000;
+      border: 1px solid rgba(255, 255, 255, 0.30);
+      border-radius: 2px;
+      transition: box-shadow 0.2s ease;
+
+      &:hover {
+         box-shadow: 0 0 10px rgba(255, 153, 0, 0.7);
+      }
+
+      &:active {
+         box-shadow: 0 0 10px #ff9900;
+      }
+   }
+}
