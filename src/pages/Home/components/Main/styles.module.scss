@@ -1,0 +1,44 @@
+.main {
+   background: rgba(231, 212, 190, 0.44) url(../../../../static/images/mainPhoto.png) no-repeat right center / contain;
+   padding: 160px 0 241px;
+
+   .container {
+      max-width: 1200px;
+      padding: 0 15px;
+      margin: 0 auto;
+   }
+
+   h1 {
+      max-width: 467px;
+      padding: 21px 0 27px;
+      position: relative;
+
+      &::before {
+         content: "";
+         width: 134px;
+         height: 276px;
+         transform: rotate(29.2deg);
+         background: url(../../../../static/images/spica.png) no-repeat center / cover;
+         position: absolute;
+         top: -180px;
+         left: -180px;
+      }
+
+      &::after {
+         content: "";
+         width: 65px;
+         height: 56px;
+         transform: rotate(-10deg);
+         background: url(../../../../static/images/crumbs1.svg) no-repeat center / contain;
+         position: absolute;
+         top: -15px;
+         right: 141px;
+      }
+   }
+
+   &__text {
+      max-width: 420px;
+      font-size: 20px;
+      padding: 3px 0;
+   }
+}
