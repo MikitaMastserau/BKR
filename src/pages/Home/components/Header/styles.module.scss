@@ -49,4 +49,10 @@
          box-shadow: 0 0 10px #ff9900;
       }
    }
+
+   &__mail {
+      display: flex;
+      align-items: flex-end;
+      gap: 10px;
+   }
 }
