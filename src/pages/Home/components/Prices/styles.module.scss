@@ -1,0 +1,88 @@
+.prices {
+   padding: 105px 0 112px;
+
+   .container {
+      max-width: 1200px;
+      padding: 0 15px;
+      margin: 0 auto;
+   }
+
+   &__hat {
+      max-width: 519px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      padding-bottom: 69px;
+   }
+
+   &__blocks {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding-bottom: 32px;
+   }
+
+   &__bigCard {
+      display: flex;
+      flex-direction: column;
+      gap: 19px;
+      background: url(../../../../static/images/bread5.png) no-repeat center center / cover;
+      padding: 185px 48px 33px;
+
+      h3 {
+         max-width: 294px;
+         color: #fff;
+      }
+
+      >div {
+         display: flex;
+         gap: 298px;
+
+         h3 {
+            width: 54px;
+         }
+
+         p {
+            max-width: 322px;
+            color: rgba(255, 255, 255, 0.50);
+         }
+      }
+   }
+
+   &__card {
+      >div {
+         padding: 25px 32px 0;
+
+         >div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 4px;
+
+            p {
+               font-family: "Oswald", sans-serif;
+               font-size: 24px;
+            }
+         }
+      }
+   }
+
+   &__btn {
+      width: 170px;
+      height: 48px;
+      font-family: "Oswald", sans-serif;
+      text-transform: uppercase;
+      border-radius: 2px;
+      border: 1px solid rgba(23, 27, 27, 0.24);
+      transition: all 0.3s ease;
+      margin: 67px auto 0;
+
+      &:hover {
+         background-color: rgba(23, 27, 27, 0.1);
+      }
+
+      &:active {
+         background-color: rgba(23, 27, 27, 0.2);
+      }
+   }
+}

@@ -19,11 +19,20 @@
 
          a {
             width: 97px;
-            display: block;
             font-size: 16px;
             line-height: 32px;
             text-align: center;
             color: #000;
+            border: 3px solid #fff;
+            transition: border 0.3s ease;
+
+            &:hover {
+               border-bottom: 3px solid #F9BF77;
+            }
+
+            &:active {
+               border: 3px solid #F9BF77;
+            }
          }
       }
    }

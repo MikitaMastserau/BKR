@@ -1,0 +1,92 @@
+.process {
+   background-color: #171B1B;
+   padding: 105px 0 93px;
+   position: relative;
+
+   &::before {
+      content: "";
+      width: 224px;
+      height: 96px;
+      background: url(../../../../static/images/spot2.svg) no-repeat center / contain;
+      position: absolute;
+      top: 0;
+      left: 0;
+   }
+
+   .container {
+      max-width: 1200px;
+      padding: 0 15px;
+      margin: 0 auto;
+   }
+
+   &__hat {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+      padding-bottom: 69px;
+
+      h2 {
+         color: #fff;
+      }
+   }
+
+   &__content {
+      display: flex;
+      justify-content: center;
+   }
+
+   &__step {
+      max-width: 290px;
+      background-color: #fff;
+      transition: all 0.3s ease;
+      overflow: hidden;
+      padding: 40px 45px 54px;
+      position: relative;
+
+      &:hover {
+         background-color: #FBB65F;
+         transform: scale(1.08);
+         z-index: 3;
+
+         .process__hov {
+            opacity: 1;
+            transition: opacity 0.3s ease;
+         }
+      }
+
+      &:first-child .process__hov {
+         background: url(../../../../static/images/hands.png) no-repeat bottom left / contain;
+      }
+
+      &:nth-child(2) .process__hov {
+         background: url(../../../../static/images/bread10.jpg) no-repeat bottom left / contain;
+      }
+
+      &:nth-child(3) .process__hov {
+         background: url(../../../../static/images/basket.jpg) no-repeat bottom left / contain;
+      }
+
+      &:last-child .process__hov {
+         background: url(../../../../static/images/bread11.jpg) no-repeat bottom left / contain;
+      }
+
+      h3 {
+         padding: 96px 0 18px;
+      }
+
+      p {
+         color: rgba(51, 51, 51, 0.50);
+      }
+   }
+
+   &__hov {
+      opacity: 0;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      position: absolute;
+      right: -25px;
+      top: -25px;
+   }
+}
