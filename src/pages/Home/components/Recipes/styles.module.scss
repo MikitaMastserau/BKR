@@ -1,0 +1,154 @@
+.recipes {
+   background-color: #171B1B;
+   padding: 92px 0 30px;
+   position: relative;
+
+   &::before {
+      content: "";
+      width: 188px;
+      height: 214px;
+      background: url(../../../../static/images/spot3.svg) no-repeat center / contain;
+      position: absolute;
+      top: 0;
+      right: 0;
+   }
+
+   &::after {
+      content: "";
+      width: 87px;
+      height: 124px;
+      background: url(../../../../static/images/crumbs5.svg) no-repeat center / contain;
+      position: absolute;
+      top: 60px;
+      right: 0;
+   }
+
+   .container {
+      max-width: 1200px;
+      padding: 0 15px;
+      margin: 0 auto;
+   }
+
+   &__hat {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      padding-bottom: 69px;
+
+      h2 {
+         max-width: 617px;
+         color: #fff;
+      }
+   }
+
+   &__content {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+   }
+
+   &__big {
+      background-color: #fff;
+
+      >div {
+         display: flex;
+         flex-direction: column;
+         gap: 19px;
+         padding: 25px 48px 33px;
+
+         >div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            >p {
+               max-width: 320px;
+               color: rgba(51, 51, 51, 0.50);
+            }
+
+            >div {
+               display: flex;
+               align-items: center;
+               gap: 11px;
+
+               >p {
+                  color: #171B1B;
+                  font-family: "Oswald", sans-serif;
+                  font-size: 24px;
+               }
+            }
+         }
+      }
+   }
+
+   &__smalls {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 32px 30px;
+   }
+
+   &__card {
+      background-color: #fff;
+
+      >div {
+         padding: 12px 32px 22px;
+
+         >div {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 14px;
+
+            >p {
+               color: rgba(51, 51, 51, 0.50);
+            }
+
+            >div {
+               display: flex;
+               align-items: center;
+               gap: 7px;
+            }
+         }
+
+         >p {
+            max-width: 206px;
+            font-size: 20px;
+         }
+      }
+   }
+
+   &__btn {
+      width: 170px;
+      height: 48px;
+      font-family: "Oswald", sans-serif;
+      text-transform: uppercase;
+      color: #fff;
+      border-radius: 2px;
+      border: 1px solid rgba(255, 255, 255, 0.30);
+      transition: all 0.3s ease;
+      margin: 64px auto 0;
+
+      &:hover {
+         background-color: rgba(255, 255, 255, 0.10);
+      }
+
+      &:active {
+         background-color: rgba(255, 255, 255, 0.20);
+      }
+   }
+
+   &__spot {
+      height: 130px;
+      background-color: #171B1B;
+
+      &::before {
+         content: "";
+         width: 146px;
+         height: 130px;
+         background: url(../../../../static/images/spot4.svg) no-repeat center / contain;
+         position: absolute;
+         bottom: 0;
+         left: 0;
+      }
+   }
+}
