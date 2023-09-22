@@ -1,0 +1,118 @@
+.about {
+   padding: 153px 0 120px;
+
+   .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      max-width: 1200px;
+      padding: 0 15px;
+      margin: 0 auto;
+   }
+
+   &__images {
+      background: url(../../../../static/images/spot.svg) no-repeat bottom right / contain;
+      padding: 7px 153px 372px 0;
+      position: relative;
+
+      img:last-of-type {
+         position: absolute;
+         top: 231px;
+         left: 70px;
+         z-index: 2;
+      }
+
+      &::before {
+         content: "";
+         width: 100px;
+         height: 87px;
+         transform: rotate(-5deg);
+         background: url(../../../../static/images/crumbs2.svg) no-repeat center / contain;
+         position: absolute;
+         top: 400px;
+         left: -80px;
+      }
+
+      &::after {
+         content: "";
+         width: 144px;
+         height: 164px;
+         background: url(../../../../static/images/crumbs3.svg) no-repeat center / contain;
+         position: absolute;
+         top: 70px;
+         right: -10px;
+         z-index: 1;
+      }
+   }
+
+   &__content {
+      max-width: 570px;
+   }
+
+   &__hat {
+      h2 {
+         padding: 21px 0 59px;
+      }
+   }
+
+   &__slider {
+      width: 470px;
+      height: 370px;
+   }
+}
+
+.swiper {
+   width: 100%;
+   height: 100%;
+}
+
+.swiper-slide {
+   display: flex;
+   flex-direction: column;
+   padding-left: 100px;
+
+   h4 {
+      padding: 12px 0 23px;
+   }
+
+   >p {
+      color: rgba(51, 51, 51, 0.50);
+   }
+
+   >div {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding: 31px 0 0;
+
+      p {
+         color: #171B1B;
+      }
+   }
+}
+
+.swiper-button-prev {
+   width: 48px;
+   height: 48px;
+   background: url(../../../../static/icons/arrowUp.svg) #171B1B no-repeat center;
+   border-radius: 50%;
+   top: 80px;
+   left: 0;
+
+   &::after {
+      display: none;
+   }
+}
+
+.swiper-button-next {
+   width: 48px;
+   height: 48px;
+   background: url(../../../../static/icons/arrowDown.svg) #171B1B no-repeat center;
+   border-radius: 50%;
+   top: 138px;
+   left: 0;
+
+   &::after {
+      display: none;
+   }
+}

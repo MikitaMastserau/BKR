@@ -1,4 +1,5 @@
 import { Supertitle } from "components/Supertitle";
+
 import styles from "./styles.module.scss";
 
 export const Main = () => {

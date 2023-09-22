@@ -1,0 +1,77 @@
+.feat {
+   padding: 0 0 176px;
+
+   .container {
+      max-width: 1200px;
+      padding: 0 15px;
+      margin: 0 auto;
+   }
+
+   &__hat {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+      padding-bottom: 69px;
+   }
+
+   &__content {
+      display: flex;
+      justify-content: center;
+   }
+
+   &__block {
+      padding: 51px 35px 48px;
+      transition: all 0.3s ease;
+      overflow: hidden;
+      position: relative;
+
+      &:hover {
+         background-color: #F9BF77;
+
+         svg {
+            fill: #FFF;
+         }
+
+         .feat__hov {
+            opacity: 1;
+            transition: opacity 0.3s ease;
+         }
+
+         &:first-child .feat__hov {
+            background: url(../../../../static/images/cup.jpeg) no-repeat left -25px center / cover;
+         }
+
+         &:nth-child(2) .feat__hov {
+            background: url(../../../../static/images/cake.png) no-repeat left -10px top -15px / cover;
+         }
+
+         &:last-child .feat__hov {
+            background: url(../../../../static/images/bread3.jpg) no-repeat left -15px center / cover;
+         }
+      }
+
+      svg {
+         display: flex;
+      }
+
+      h3 {
+         padding: 54px 0 23px;
+      }
+
+      p {
+         max-width: 300px;
+         color: rgba(51, 51, 51, 0.50);
+      }
+   }
+
+   &__hov {
+      opacity: 0;
+      width: 182px;
+      height: 182px;
+      border-radius: 50%;
+      position: absolute;
+      right: -27px;
+      top: -27px;
+   }
+}
