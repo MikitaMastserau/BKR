@@ -1,0 +1,55 @@
+.workers {
+   padding: 150px 0 130px;
+
+   .container {
+      max-width: 1200px;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 15px;
+      margin: 0 auto;
+   }
+
+   &__hat {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      padding-bottom: 62px;
+
+      h2 {
+         max-width: 450px;
+      }
+   }
+
+   &__photo {
+      background: url(../../../../static/images/spot5.svg) no-repeat bottom left / contain;
+      padding: 0 0 40px 60px;
+      position: relative;
+
+      &::before {
+         content: "";
+         width: 280px;
+         height: 214px;
+         background: url(../../../../static/images/spot6.svg) no-repeat center / contain;
+         position: absolute;
+         top: -30px;
+         right: 40px;
+         z-index: 2;
+      }
+
+      &::after {
+         content: "";
+         width: 134px;
+         height: 173px;
+         background: url(../../../../static/images/crumbs6.svg) no-repeat center / contain;
+         position: absolute;
+         top: 120px;
+         left: -18px;
+         z-index: 2;
+      }
+
+      img {
+         position: relative;
+         z-index: 3;
+      }
+   }
+}

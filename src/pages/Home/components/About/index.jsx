@@ -28,13 +28,12 @@ export const About = () => {
                      direction={"vertical"}
                      navigation={true}
                      modules={[Navigation]}
-                     className="mySwiper"
                   >
                      <SwiperSlide>
                         <Supertitle color="#171B1B" text="01" />
-                        <h4>Last view back</h4>
-                        <p>She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic.</p>
-                        <div>
+                        <h4 className="sliderTitle">Last view back</h4>
+                        <p className="sliderText">She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic.</p>
+                        <div className="sliderDiv">
                            <p>On the skyline</p>
                            <p>Pityful a rethoric</p>
                            <p>On her way she</p>
