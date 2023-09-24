@@ -8,6 +8,8 @@ import { Process } from "../Process";
 import { Recipes } from "../Recipes";
 import { Workers } from "../Workers";
 import { Reviews } from "../Reviews";
+import { Contact } from "../Contact";
+import { Footer } from "../Footer";
 
 export const HomeLayout = () => {
    return (
@@ -22,6 +24,8 @@ export const HomeLayout = () => {
          <Recipes />
          <Workers />
          <Reviews />
+         <Contact />
+         <Footer />
       </>
    )
 };

@@ -27,11 +27,11 @@ export const Header = () => {
       <header className={styles.header}>
          <div className={styles.container}>
             <div className={styles.header__links}>
-               <LogoButton />
+               <LogoButton color="#000" />
                <nav>
-                  <a href="#1">About</a>
-                  <a href="#1">Products</a>
-                  <a href="#1">Recipes</a>
+                  <a href="#about">About</a>
+                  <a href="#products">Products</a>
+                  <a href="#recipes">Recipes</a>
                </nav>
             </div>
             <button className={styles.header__btn} onClick={handleClickOpen}>Contact</button>
