@@ -1,0 +1,106 @@
+.contact {
+   padding: 0 0 150px;
+
+   .container {
+      max-width: 1200px;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 15px;
+      margin: 0 auto;
+   }
+
+   &__photo {
+      background: url(../../../../static/images/spot5.svg) no-repeat bottom left / contain;
+      padding: 0 40px 40px 0;
+      position: relative;
+
+      &::before {
+         content: "";
+         width: 280px;
+         height: 214px;
+         background: url(../../../../static/images/spot7.svg) no-repeat center / contain;
+         position: absolute;
+         top: -25px;
+         left: 140px;
+         z-index: 2;
+      }
+
+      &::after {
+         content: "";
+         width: 134px;
+         height: 173px;
+         background: url(../../../../static/images/crumbs6.svg) no-repeat center / contain;
+         position: absolute;
+         top: 50px;
+         right: -50px;
+         z-index: 2;
+      }
+
+      img {
+         position: relative;
+         z-index: 3;
+      }
+   }
+
+   &__hat {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      padding: 50px 0 62px;
+
+      h2 {
+         max-width: 280px;
+      }
+   }
+
+   &__info {
+      display: flex;
+      gap: 60px;
+   }
+
+   &__block {
+      display: flex;
+      gap: 50px;
+
+      &:first-child .contact__text p {
+         color: rgba(51, 51, 51, 0.50);
+      }
+   }
+
+   &__icon {
+      width: 48px;
+      height: 48px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #171B1B;
+      border-radius: 50%;
+      margin-top: 55px;
+   }
+
+   &__text {
+      max-width: 147px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+   }
+
+   &__btn {
+      width: 170px;
+      height: 48px;
+      font-family: "Oswald", sans-serif;
+      text-transform: uppercase;
+      border-radius: 2px;
+      border: 1px solid rgba(23, 27, 27, 0.24);
+      transition: all 0.3s ease;
+      margin: 70px 0 0 100px;
+
+      &:hover {
+         background-color: rgba(23, 27, 27, 0.1);
+      }
+
+      &:active {
+         background-color: rgba(23, 27, 27, 0.2);
+      }
+   }
+}

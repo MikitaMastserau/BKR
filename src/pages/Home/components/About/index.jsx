@@ -12,7 +12,7 @@ import "./styles.scss";
 
 export const About = () => {
    return (
-      <section className="about">
+      <section className="about" id="about">
          <div className="container">
             <div className="about__images">
                <img src={bread1} alt="" />

@@ -12,7 +12,7 @@ import styles from "./styles.module.scss";
 
 export const Recipes = () => {
    return (
-      <section className={styles.recipes}>
+      <section className={styles.recipes} id="recipes">
          <div className={styles.container}>
             <div className={styles.recipes__hat}>
                <Supertitle color="#fff" text="Our Recipes" />

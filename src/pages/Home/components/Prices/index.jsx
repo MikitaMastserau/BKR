@@ -9,7 +9,7 @@ import styles from "./styles.module.scss";
 
 export const Prices = () => {
    return (
-      <section className={styles.prices}>
+      <section className={styles.prices} id="products">
          <div className={styles.container}>
             <div className={styles.prices__hat}>
                <Supertitle color="#171B1B" text="Our Products" />
