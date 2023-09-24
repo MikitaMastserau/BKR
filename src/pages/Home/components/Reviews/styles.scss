@@ -1,0 +1,84 @@
+.reviews {
+   padding: 0 0 175px;
+
+   .container {
+      max-width: 1200px;
+      padding: 0 15px;
+      margin: 0 auto;
+   }
+
+   &__hat {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      padding-bottom: 53px;
+
+      h2 {
+         max-width: 615px;
+      }
+   }
+}
+
+.reviewsSwiper {
+   width: 100%;
+   height: 100%;
+
+   .swiper-slide {
+      padding: 45px;
+
+      .reviewsPhotos {
+         display: flex;
+         justify-content: space-between;
+         align-items: flex-start;
+
+         .stars {
+            width: 120px;
+            height: 24px;
+            background-color: #F5A623;
+            mask-image: url(../../../../static/icons/stars.svg);
+            margin-top: 16px;
+         }
+
+         img {
+            width: 102px;
+            height: 102px;
+            border-radius: 50%;
+         }
+      }
+
+      .reviewsTitle {
+         max-width: 105px;
+         padding-bottom: 22px;
+      }
+
+      .reviewsText {
+         color: rgba(51, 51, 51, 0.50);
+      }
+   }
+
+   .swiper-wrapper {
+      padding-bottom: 60px;
+   }
+
+   .swiper-pagination {
+      bottom: 0;
+   }
+
+   .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+   .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+      margin: 0 10px;
+   }
+
+   .swiper-pagination-bullet-active {
+      background-color: #000;
+      transform: scale(1.5);
+   }
+
+   .swiper-slide-active {
+      background-color: #FBB65F;
+
+      .reviewsPhotos .stars {
+         background-color: #F5D3AB;
+      }
+   }
+}
