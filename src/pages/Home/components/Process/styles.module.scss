@@ -20,6 +20,7 @@
    }
 
    &__hat {
+      text-align: center;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -88,5 +89,22 @@
       position: absolute;
       right: -25px;
       top: -25px;
+   }
+}
+
+@media screen and (max-width: 1199px) {
+   .process {
+      &__content {
+         display: grid;
+         grid-template-columns: repeat(2, auto);
+      }
+   }
+}
+
+@media screen and (max-width: 767px) {
+   .process {
+      &__content {
+         grid-template-columns: repeat(1, auto);
+      }
    }
 }

@@ -41,7 +41,7 @@
       width: 138px;
       font-size: 16px;
       font-family: "Oswald", sans-serif;
-      line-height: normal;
+      line-height: 32px;
       text-align: center;
       text-transform: uppercase;
       color: #FFF;
@@ -63,5 +63,20 @@
       display: flex;
       align-items: flex-end;
       gap: 10px;
+   }
+}
+
+@media screen and (max-width: 767px) {
+   .header {
+      .container {
+         flex-direction: column;
+         align-items: center;
+         gap: 10px;
+      }
+
+      &__links {
+         flex-direction: column;
+         gap: 0;
+      }
    }
 }

@@ -109,6 +109,11 @@ legend {
 
 /* ----- General styles ----- */
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   font-size: 16px;
   font-weight: 400;
