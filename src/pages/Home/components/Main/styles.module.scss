@@ -32,7 +32,7 @@
          background: url(../../../../static/images/crumbs1.svg) no-repeat center / contain;
          position: absolute;
          top: -15px;
-         right: 141px;
+         left: 265px;
       }
    }
 
@@ -41,5 +41,35 @@
       font-size: 20px;
       color: #000;
       padding: 3px 0;
+   }
+
+   &__photo {
+      display: none;
+   }
+}
+
+@media screen and (max-width: 1199px) {
+   .main {
+      background: rgba(231, 212, 190, 0.44);
+      padding: 150px 0 0;
+
+      .container {
+         display: flex;
+         justify-content: center;
+      }
+
+      &__photo {
+         display: block;
+         width: 100%;
+         padding: 100px 0 0;
+      }
+   }
+}
+
+@media screen and (max-width: 767px) {
+   .main {
+      .container {
+         padding: 0 30px;
+      }
    }
 }

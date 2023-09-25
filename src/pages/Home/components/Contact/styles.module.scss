@@ -104,3 +104,40 @@
       }
    }
 }
+
+@media screen and (max-width: 1199px) {
+   .contact {
+      padding: 0 0 100px;
+
+      .container {
+         flex-direction: column-reverse;
+         align-items: center;
+         gap: 100px;
+         padding: 0 30px;
+      }
+   }
+}
+
+@media screen and (max-width: 767px) {
+   .contact {
+      &__photo {
+         padding: 0 20px 20px 0;
+
+         &::before {
+            left: 0px;
+         }
+
+         &::after {
+            top: 0;
+         }
+      }
+
+      &__info {
+         flex-direction: column;
+      }
+
+      &__btn {
+         margin: 70px auto 0;
+      }
+   }
+}

@@ -34,8 +34,6 @@ export const Prices = () => {
                      </div>
                   </div>
                </div>
-            </div>
-            <div className={styles.prices__blocks}>
                <div className={styles.prices__card}>
                   <img src={bread7} alt="" />
                   <div>

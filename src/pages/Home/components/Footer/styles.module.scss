@@ -113,3 +113,49 @@
       }
    }
 }
+
+@media screen and (max-width: 1199px) {
+   .footer {
+      .container {
+         padding: 0 30px;
+      }
+
+      &__icons {
+         padding: 5px 30px 0 0;
+      }
+   }
+}
+
+@media screen and (max-width: 767px) {
+   .footer {
+      &__content {
+         display: grid;
+         grid-template-columns: repeat(3, auto);
+         justify-content: space-around;
+      }
+
+      button {
+         grid-column: 1/4;
+      }
+
+      &__menu {
+         padding: 30px 0;
+      }
+
+      &__icons {
+         flex-direction: column;
+         padding: 0;
+      }
+
+      &__down {
+         flex-direction: column-reverse;
+         gap: 20px;
+         padding: 30px 0 60px;
+
+         >div {
+            justify-content: space-between;
+            gap: 0;
+         }
+      }
+   }
+}

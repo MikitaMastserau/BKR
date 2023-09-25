@@ -13,7 +13,7 @@ export const Workers = () => {
    return (
       <section className="workers">
          <div className="container">
-            <div>
+            <div className="workers__content">
                <div className="workers__hat">
                   <Supertitle color="#171B1B" text="Our Baker" />
                   <h2>Meet Our Professional Baker</h2>

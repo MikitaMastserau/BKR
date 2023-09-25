@@ -8,8 +8,10 @@
    }
 
    &__hat {
+      text-align: center;
       display: flex;
       flex-direction: column;
+      align-items: center;
       gap: 18px;
       padding-bottom: 53px;
 
@@ -79,6 +81,35 @@
 
       .reviewsPhotos .stars {
          background-color: #F5D3AB;
+      }
+   }
+}
+
+@media screen and (max-width: 1199px) {
+   .reviews {
+      padding: 0 0 100px;
+
+      .container {
+         padding: 0 30px;
+      }
+
+      &__slider {
+         max-width: 780px;
+         margin: 0 auto;
+      }
+   }
+}
+
+@media screen and (max-width: 767px) {
+   .reviews {
+      &__slider {
+         max-width: 390px;
+      }
+   }
+
+   .reviewsSwiper {
+      .swiper-slide {
+         padding: 45px 30px;
       }
    }
 }

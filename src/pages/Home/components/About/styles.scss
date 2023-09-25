@@ -112,3 +112,50 @@
       display: none;
    }
 }
+
+@media screen and (max-width: 1199px) {
+   .about {
+      padding: 120px 0;
+
+      .container {
+         flex-direction: column-reverse;
+         align-items: center;
+         gap: 60px;
+      }
+
+      &__content {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+      }
+   }
+}
+
+@media screen and (max-width: 767px) {
+   .about {
+      padding: 100px 0;
+
+      &__images {
+         background-position: center center;
+         padding: 7px 0 410px 0;
+
+         img:last-of-type {
+            top: 350px;
+            left: 0;
+         }
+      }
+
+      &__content {
+         max-width: 350px;
+      }
+
+      &__slider {
+         width: 340px;
+         height: 400px;
+      }
+   }
+
+   .swiper-slide {
+      padding-left: 80px;
+   }
+}

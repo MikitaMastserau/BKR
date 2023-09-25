@@ -18,20 +18,34 @@ export const Reviews = () => {
       <section className="reviews">
          <div className="container">
             <div className="reviews__hat">
-               <Supertitle color="#171B1B" text="Our Baker" />
-               <h2>Meet Our Professional Baker</h2>
+               <Supertitle color="#171B1B" text="Testimonials" />
+               <h2>People Say About Our Bakery</h2>
             </div>
             <div className="reviews__slider">
                <Swiper
                   grabCursor={true}
-                  slidesPerView={3}
                   pagination={{
                      clickable: true,
                   }}
-                  centeredSlides={true}
-                  initialSlide={1}
                   slideToClickedSlide={true}
                   modules={[Pagination]}
+                  breakpoints={{
+                     300: {
+                        slidesPerView: 1,
+                        centeredSlides: false,
+                        initialSlide: 0,
+                     },
+                     767: {
+                        slidesPerView: 2,
+                        centeredSlides: false,
+                        initialSlide: 0,
+                     },
+                     1199: {
+                        slidesPerView: 3,
+                        centeredSlides: true,
+                        initialSlide: 1,
+                     }
+                  }}
                   className="reviewsSwiper"
                >
                   <SwiperSlide>

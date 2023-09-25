@@ -152,3 +152,56 @@
       }
    }
 }
+
+@media screen and (max-width: 1199px) {
+   .recipes {
+      padding: 92px 0 0;
+
+      .container {
+         padding: 0 30px;
+      }
+
+      &__hat {
+         h2 {
+            max-width: 550px;
+         }
+      }
+
+      &__content {
+         flex-direction: column;
+         align-items: center;
+      }
+   }
+}
+
+@media screen and (max-width: 767px) {
+   .recipes {
+      &::before {
+         top: -60px;
+      }
+
+      &::after {
+         top: 0;
+      }
+
+      &__big {
+         >div {
+            padding: 25px 30px 33px;
+
+            >div {
+               align-items: flex-end;
+
+               >p {
+                  max-width: 180px;
+               }
+            }
+         }
+      }
+
+      &__smalls {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+      }
+   }
+}
